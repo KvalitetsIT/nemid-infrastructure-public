@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta http-equiv="Content-language" content="en-US">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DanID Development Tools - </title>
+		<link href="2709311098_files/bootstrap.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="https://appletk.danid.dk/developers/favicon.ico">
+		<script type="text/javascript" src="2709311098_files/jquery.js"></script>
+		<script type="text/javascript" src="2709311098_files/bootstrap.js"></script>
+		<!--[if lt IE 9]>
+  <script src="/developers/js/respond.min.js"></script>
+<![endif]-->
+
+  <script>function initialize() { if(typeof initializePage == 'function') initializePage(); }; </script>
+</head>
+<body style="padding-top: 70px;" onload="initialize()">
+ <div class="navbar navbar-default navbar-fixed-top">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="#"></a>
+		        </div>
+		        <div class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav">
+		            <li><a id="to_search" href="https://appletk.danid.dk/developers/index.jsp" class="menu_link">New User</a></li>
+		            <li class="dropdown">
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Flows - Standard<b class="caret"></b></a>
+		            	<ul class="dropdown-menu">
+		            		<li><a id="logins" href="https://appletk.danid.dk/developers/examples/logins.jsp" class="menu_link">All Demo logins</a></li>
+		            		<li><a id="custom_logins" href="https://appletk.danid.dk/developers/examples/js/custom.jsp?launchermode=standard" class="menu_link">Customize Parameters</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_login1.jsp?launchermode=standard" class="menu_link">1-factor login (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_login2.jsp?launchermode=standard" class="menu_link">2-factor login (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_sign2.jsp?launchermode=standard" class="menu_link">2-factor signing (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_sign1.jsp?launchermode=standard" class="menu_link">1-factor signing (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/long_login2.jsp?launchermode=standard" class="menu_link">2-factor login (OCES)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/long_sign2.jsp?launchermode=standard" class="menu_link">2-factor signing (OCES)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/sso.jsp" class="menu_link">SSO (Bank -&gt; OCES)</a></li>
+		            		<li><a id="full_custom_logins" href="https://appletk.danid.dk/developers/examples/js/fullcustom.jsp" class="menu_link">Customized JSON Parameters</a></li>
+		            	</ul>
+		            </li>		            <li class="dropdown">
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Flows - Responsive<b class="caret"></b></a>
+		            	<ul class="dropdown-menu">
+		            		<li><a id="logins" href="https://appletk.danid.dk/developers/examples/logins.jsp" class="menu_link">All Demo logins</a></li>
+		            		<li><a id="custom_logins" href="https://appletk.danid.dk/developers/examples/js/custom.jsp?launchermode=limited" class="menu_link">Customize Parameters</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_login1.jsp?launchermode=limited" class="menu_link">1-factor login (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_login2.jsp?launchermode=limited" class="menu_link">2-factor login (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_sign2.jsp?launchermode=limited" class="menu_link">2-factor signing (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/short_sign1.jsp?launchermode=limited" class="menu_link">1-factor signing (bank)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/long_login2.jsp?launchermode=limited" class="menu_link">2-factor login (OCES)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/long_sign2.jsp?launchermode=limited" class="menu_link">2-factor signing (OCES)</a></li>
+		            		<li><a href="https://appletk.danid.dk/developers/examples/js/sso.jsp" class="menu_link">SSO (Bank -&gt; OCES)</a></li>
+		            		<li><a id="full_custom_logins" href="https://appletk.danid.dk/developers/examples/js/fullcustom.jsp" class="menu_link">Customized JSON Parameters</a></li>
+		            	</ul>
+		            </li><li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current User: 633594892<b class="caret"></b></a>
+		              <ul class="dropdown-menu">
+						<li><a id="refresh" href="https://appletk.danid.dk/developers/OtpCard?userid=633594892" class="menu_link" target="_blank">View Active OTP Card <span class="label label-info">Opens in new window</span></a></li> 
+						<li><a id="refresh" href="https://appletk.danid.dk/developers/viewstatus.jsp?userid=633594892" class="menu_link">View Identity (refresh)</a></li> 
+						<li><a id="usage_log" href="https://appletk.danid.dk/developers/ViewUsageLog?userid=633594892" class="menu_link">Show Usage Log</a></li>
+		              </ul>
+		            </li><li class="dropdown">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Info<b class="caret"></b></a>
+		              <ul class="dropdown-menu">
+		                <li><a id="about" href="https://appletk.danid.dk/developers/about.jsp" class="menu_link">About</a></li>
+			            <li><a id="error_codes" href="https://appletk.danid.dk/developers/listerrorcodes.jsp" class="menu_link">View errorcodes</a></li>
+			            <li><a id="list_parameters" href="https://appletk.danid.dk/developers/listparameters.jsp" class="menu_link">View possible input parameters</a></li>
+			            <li><a id="parameter_validation" href="https://appletk.danid.dk/developers/validateparameters.jsp" class="menu_link">Validate generated parameters</a></li>
+			            <li><a id="parameter_validation" href="https://appletk.danid.dk/developers/signtextviewer.jsp" class="menu_link">SignText viewer</a></li>
+		                <li class="divider"></li>
+		                <li class="dropdown-header">Internals</li>
+		                <li><a id="handouts" href="https://appletk.danid.dk/developers/handouts.jsp" class="menu_link">Handouts</a></li>
+		              </ul>
+		            </li>
+		          	<li>
+		         	 <form method="post" action="/developers/manageidentities" class="navbar-form navbar-left" role="search" id="formviewexisting">
+					      <div class="form-group">
+							<input type="hidden" name="action" value="manage">
+							<input type="hidden" name="q9Mxw_EN6BExmfcrE1OQMwm" value="X1602852390584">
+							<input type="text" name="cpr" maxlength="44" size="20" id="useridinput" class="form-control" placeholder="CPR | NemID # | Alias">
+				      	</div>
+					      	<button type="submit" class="btn btn-default" id="submit_view_existing">Search</button>
+					  	</form>
+		            </li>
+		         	    <form method="post" action="/developers/examples/logoff.jsp" class="navbar-form navbar-left" role="link" id="formlogoff">
+					        <button type="submit" class="btn btn-default" id="submit_logoff">Logoff</button>
+					  	</form>
+		          	<li>
+			      	</li>
+			      	<li class="form-group">
+			      		 <div class="navbar-collapse collapse">
+					      </div>
+			      	</li>
+		          </ul>
+		        </div><!--/.nav-collapse -->
+		      </div>
+		    </div><div id="wrap">
+			<div class="container" id="container">
+
+<h1>NemID Nøglekort K040620106</h1><table style="font-size: 0.9em; line-height: 22px; font-family: Trebuchet,Verdana,Arial,sans-serif;" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td colspan="12" style="font-family: Trebuchet,Verdana,Arial,sans-serif; line-height: 32px; font-size: 1.0em;" align="center">Nøglekortnummer: K040620106
+</td></tr></tbody><colgroup><col style="background: #f0f0f0;" span="2"><col><col style="background: #e4e4e4;" span="2"><col><col style="background: #f0f0f0;" span="2"><col><col style="background: #e4e4e4;" span="2"><col></colgroup><tbody><tr><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;">&nbsp;Nøgle nr.</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="80">Nøgle</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="20"></th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;">&nbsp;Nøgle nr.</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="80">Nøgle</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="20"></th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;">&nbsp;Nøgle nr.</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="80">Nøgle</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="20"></th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;">&nbsp;Nøgle nr.</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="80">Nøgle</th><th style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black;" width="20"></th></tr>
+  <tr><td align="center">0209</td><td align="center">733396</td><td></td><td align="center">2336</td><td align="center">547843</td><td></td><td align="center">4940</td><td align="center">368543</td><td></td><td align="center">7173</td><td align="center">764495</td><td></td></tr>
+  <tr><td align="center">0306</td><td align="center">331155</td><td></td><td align="center">2345</td><td align="center">498682</td><td></td><td align="center">4976</td><td align="center">557248</td><td></td><td align="center">7181</td><td align="center">530109</td><td></td></tr>
+  <tr><td align="center">0316</td><td align="center">650010</td><td></td><td align="center">2389</td><td align="center">930938</td><td></td><td align="center">5015</td><td align="center">337099</td><td></td><td align="center">7309</td><td align="center">005946</td><td></td></tr>
+  <tr><td align="center">0345</td><td align="center">004074</td><td></td><td align="center">2394</td><td align="center">456830</td><td></td><td align="center">5078</td><td align="center">927962</td><td></td><td align="center">7326</td><td align="center">364965</td><td></td></tr>
+  <tr><td align="center">0375</td><td align="center">778023</td><td></td><td align="center">2444</td><td align="center">889937</td><td></td><td align="center">5080</td><td align="center">029409</td><td></td><td align="center">7431</td><td align="center">974230</td><td></td></tr>
+  <tr><td align="center">0545</td><td align="center">887762</td><td></td><td align="center">2487</td><td align="center">828336</td><td></td><td align="center">5135</td><td align="center">156510</td><td></td><td align="center">7475</td><td align="center">446987</td><td></td></tr>
+  <tr><td align="center">0619</td><td align="center">206281</td><td></td><td align="center">2714</td><td align="center">621310</td><td></td><td align="center">5179</td><td align="center">177203</td><td></td><td align="center">7480</td><td align="center">607172</td><td></td></tr>
+  <tr><td align="center">0658</td><td align="center">990980</td><td></td><td align="center">2801</td><td align="center">229609</td><td></td><td align="center">5226</td><td align="center">750047</td><td></td><td align="center">7481</td><td align="center">112537</td><td></td></tr>
+  <tr><td align="center">0665</td><td align="center">905811</td><td></td><td align="center">3014</td><td align="center">479853</td><td></td><td align="center">5235</td><td align="center">274208</td><td></td><td align="center">7520</td><td align="center">110516</td><td></td></tr>
+  <tr><td align="center">0677</td><td align="center">492426</td><td></td><td align="center">3086</td><td align="center">089161</td><td></td><td align="center">5281</td><td align="center">647598</td><td></td><td align="center">7713</td><td align="center">588665</td><td></td></tr>
+  <tr><td align="center">0705</td><td align="center">916958</td><td></td><td align="center">3090</td><td align="center">087418</td><td></td><td align="center">5744</td><td align="center">012126</td><td></td><td align="center">7883</td><td align="center">605143</td><td></td></tr>
+  <tr><td align="center">0728</td><td align="center">059336</td><td></td><td align="center">3125</td><td align="center">618406</td><td></td><td align="center">5777</td><td align="center">458236</td><td></td><td align="center">7887</td><td align="center">494497</td><td></td></tr>
+  <tr><td align="center">0907</td><td align="center">986969</td><td></td><td align="center">3137</td><td align="center">364586</td><td></td><td align="center">5844</td><td align="center">175812</td><td></td><td align="center">7959</td><td align="center">822275</td><td></td></tr>
+  <tr><td align="center">1235</td><td align="center">716808</td><td></td><td align="center">3326</td><td align="center">311703</td><td></td><td align="center">6030</td><td align="center">874474</td><td></td><td align="center">7966</td><td align="center">744267</td><td></td></tr>
+  <tr><td align="center">1265</td><td align="center">381791</td><td></td><td align="center">3335</td><td align="center">014294</td><td></td><td align="center">6031</td><td align="center">110075</td><td></td><td align="center">8032</td><td align="center">502681</td><td></td></tr>
+  <tr><td align="center">1321</td><td align="center">087092</td><td></td><td align="center">3394</td><td align="center">396427</td><td></td><td align="center">6093</td><td align="center">606494</td><td></td><td align="center">8067</td><td align="center">615542</td><td></td></tr>
+  <tr><td align="center">1409</td><td align="center">122722</td><td></td><td align="center">3439</td><td align="center">964332</td><td></td><td align="center">6116</td><td align="center">123242</td><td></td><td align="center">8296</td><td align="center">442236</td><td></td></tr>
+  <tr><td align="center">1437</td><td align="center">037543</td><td></td><td align="center">3462</td><td align="center">128799</td><td></td><td align="center">6353</td><td align="center">640965</td><td></td><td align="center">8437</td><td align="center">236467</td><td></td></tr>
+  <tr><td align="center">1448</td><td align="center">795028</td><td></td><td align="center">3466</td><td align="center">015504</td><td></td><td align="center">6370</td><td align="center">886332</td><td></td><td align="center">8440</td><td align="center">136490</td><td></td></tr>
+  <tr><td align="center">1477</td><td align="center">650574</td><td></td><td align="center">3512</td><td align="center">026670</td><td></td><td align="center">6402</td><td align="center">707224</td><td></td><td align="center">8483</td><td align="center">218420</td><td></td></tr>
+  <tr><td align="center">1566</td><td align="center">694259</td><td></td><td align="center">3519</td><td align="center">371212</td><td></td><td align="center">6513</td><td align="center">508945</td><td></td><td align="center">8525</td><td align="center">138000</td><td></td></tr>
+  <tr><td align="center">1585</td><td align="center">656400</td><td></td><td align="center">3595</td><td align="center">551229</td><td></td><td align="center">6519</td><td align="center">687220</td><td></td><td align="center">8653</td><td align="center">932213</td><td></td></tr>
+  <tr><td align="center">1598</td><td align="center">959937</td><td></td><td align="center">3644</td><td align="center">889729</td><td></td><td align="center">6563</td><td align="center">711257</td><td></td><td align="center">8699</td><td align="center">301386</td><td></td></tr>
+  <tr><td align="center">1608</td><td align="center">048740</td><td></td><td align="center">3793</td><td align="center">203947</td><td></td><td align="center">6640</td><td align="center">440357</td><td></td><td align="center">8713</td><td align="center">551884</td><td></td></tr>
+  <tr><td align="center">1637</td><td align="center">769269</td><td></td><td align="center">3850</td><td align="center">003030</td><td></td><td align="center">6709</td><td align="center">323085</td><td></td><td align="center">8764</td><td align="center">578430</td><td></td></tr>
+  <tr><td align="center">1747</td><td align="center">561905</td><td></td><td align="center">3872</td><td align="center">104118</td><td></td><td align="center">6935</td><td align="center">009214</td><td></td><td align="center">8811</td><td align="center">618359</td><td></td></tr>
+  <tr><td align="center">1779</td><td align="center">458953</td><td></td><td align="center">4188</td><td align="center">271085</td><td></td><td align="center">6959</td><td align="center">057610</td><td></td><td align="center">8966</td><td align="center">146205</td><td></td></tr>
+  <tr><td align="center">1849</td><td align="center">481840</td><td></td><td align="center">4220</td><td align="center">730924</td><td></td><td align="center">6965</td><td align="center">164751</td><td></td><td align="center">9014</td><td align="center">957904</td><td></td></tr>
+  <tr><td align="center">1880</td><td align="center">686520</td><td></td><td align="center">4334</td><td align="center">941322</td><td></td><td align="center">6966</td><td align="center">324687</td><td></td><td align="center">9041</td><td align="center">921292</td><td></td></tr>
+  <tr><td align="center">2046</td><td align="center">893986</td><td></td><td align="center">4506</td><td align="center">462698</td><td></td><td align="center">6983</td><td align="center">382395</td><td></td><td align="center">9064</td><td align="center">342451</td><td></td></tr>
+  <tr><td align="center">2065</td><td align="center">988852</td><td></td><td align="center">4528</td><td align="center">674480</td><td></td><td align="center">6999</td><td align="center">304132</td><td></td><td align="center">9111</td><td align="center">899531</td><td></td></tr>
+  <tr><td align="center">2122</td><td align="center">451335</td><td></td><td align="center">4647</td><td align="center">222940</td><td></td><td align="center">7011</td><td align="center">480108</td><td></td><td align="center">9236</td><td align="center">961353</td><td></td></tr>
+  <tr><td align="center">2140</td><td align="center">456759</td><td></td><td align="center">4730</td><td align="center">775289</td><td></td><td align="center">7046</td><td align="center">446615</td><td></td><td align="center">9240</td><td align="center">801161</td><td></td></tr>
+  <tr><td align="center">2163</td><td align="center">166096</td><td></td><td align="center">4787</td><td align="center">805689</td><td></td><td align="center">7050</td><td align="center">197323</td><td></td><td align="center">9321</td><td align="center">712590</td><td></td></tr>
+  <tr><td align="center">2229</td><td align="center">179249</td><td></td><td align="center">4803</td><td align="center">691850</td><td></td><td align="center">7095</td><td align="center">578357</td><td></td><td align="center">9344</td><td align="center">956051</td><td></td></tr>
+  <tr><td align="center">2236</td><td align="center">686728</td><td></td><td align="center">4841</td><td align="center">838581</td><td></td><td align="center">7114</td><td align="center">118746</td><td></td><td align="center">9896</td><td align="center">940674</td><td></td></tr>
+  <tr><td align="center">2335</td><td align="center">079674</td><td></td><td align="center">4902</td><td align="center">123169</td><td></td><td align="center">7167</td><td align="center">921880</td><td></td><td align="center">9919</td><td align="center">114371</td><td></td></tr>
+</tbody></table>
+
+
+	</div> <!-- end of container -->
+</div> <!-- end of wrap -->
+ <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">
+			<strong>NemID Test Tools - Copyright © 2020</strong> | <a href="http://www.nets-danid.dk/">Nets-DanID A/S</a>
+        </p>
+      </div>
+    </div>
+
+
+    </body></html>
